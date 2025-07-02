@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.env
+venv*/
+credenciais.json
+client_secrets.jsoncredenciais.json 
+client_secrets.json 
+credenciais.json 

@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>ValenteCare IA - Questionário</title>
+</head>
+<body>
+    <h2>Formulário Interativo de SST</h2>
+    <form method="POST">
+        <label>Nome:</label><input name="nome" required><br>
+        <label>CPF:</label><input name="cpf" required><br>
+        <label>Empresa:</label><input name="empresa" required><br>
+        <label>Função:</label><input name="funcao" required><br>
+        <label>Como está se sentindo hoje no trabalho?</label><input name="sentimento" required><br>
+        <button type="submit">Gerar Perguntas</button>
+    </form>
+    {% if perguntas %}
+        <h3>Perguntas Geradas:</h3>
+        <ul>
+            {% for pergunta in perguntas %}
+            <li>{{ pergunta }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,5 @@
+flask
+openai
+fpdf
+cryptography
+PyDrive
